@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    background-color: rgb(14,43,70);
+    height: 180vh;
+}
+.container-fluid img{
+    margin-left: 700px;
+    padding-top: 2rem;
+}
+.whiteBackground{
+    margin-top: 3rem;
+    background-color: white;
+    min-height: 120vh;
+    width: 35%;
+    margin-left: 500px;
+    border-radius: 5px;
+}
+.Create {
+    margin-left: 125px;
+    padding-top: 20px;
+}
+.Country a{
+    color: #3676c8;
+    text-decoration: none;
+}
+.Country{
+    display: flex;
+    padding: 20px 25px;
+    justify-content: space-between;
+}
+.form-select{
+    /* padding: 20px; */
+    text-decoration: none;
+    height: 40px;
+}
+.container form{
+    padding: 20px 0px;
+}
+.phoneNumber{
+    display: flex;
+    gap: 10px;
+}
+.container input{
+    height: 40px;
+}
+.container select{
+    width: 90%;
+    margin-left: 20px;
+}
+form label{
+    margin-left: 30px;
+}
+form input{
+    width: 90%; 
+    margin-left: 20px;
+}
+.form-check input{
+    height: 15px;
+}
+#software{
+    /* gap: 40px; */
+    margin-left: 40px;
+}
+#exampleRadios2{
+    margin-left: 40px;
+}
+.form-check a{
+    text-decoration: none;
+}
+.CreateBtn{
+    background-color: rgb(127,208,150);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 12vh;
+}
+.ByClick{
+    text-align: center;
+}
+.AlreadyHave{
+    color: white;
+    margin-left: 640px;
+}
+.AlreadyHave a{
+    color: white;
+}

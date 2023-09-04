@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.header1{
+    width: 100%;
+    background-color: rgb(13, 39, 61);
+    height: 5vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+    position: fixed;
+    z-index: 900;
+}
+.header1 p a{
+    color: white;
+}
+.header1 p::after{
+    position: relative;
+    content: "→";
+    font-size: 12px;
+    left: 10px;
+    align-items: center;
+    color: white;
+    animation: horizontalPulse 2.8s ease-in 3s infinite;
+}
+
+#nav{
+    background-color: transparent;
+    height: 9vh;
+    position: fixed;
+    margin-top: 36px   ;
+}
+#nav li a{
+    color: rgb(19,43,65);
+}
+#Your{
+    background-color: #EAF6FCF2;
+}
+
+#Choose{
+    background-color: white;
+    color: black;
+    background-size: cover;
+    
+}
+.ChooseLogo{
+    display: flex;
+}
+#Choose img{
+    height: 50px;
+    padding-left: 20px;
+    justify-content: center;
+   
+}
+#Your:hover li a{
+    color: blue;
+}
+.whyChoose:hover{
+    color: blue;
+}
+.success:hover{
+    color: blue;
+}
+.Demo:hover{
+    color: blue;
+}
+.Create{
+    background-color: green;
+    color: white;
+    width: 11em;
+    height: 5vh;
+   justify-content: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.container{
+    padding: 200px 20px;
+}
+/* section1-------------------------- */
+#Whydo{
+    height: 80vh;
+    background-image: url(../images/curved-pattern.png);
+    background-repeat: repeat-x;
+    background-blend-mode: screen;
+    background-position: 300px 200px;
+    }
+    #whydo1{
+        text-align: center;
+        justify-content: center;
+        padding-top: 200px;
+    }
+
+    /* section2-------------------------- */
+#section1{
+    margin-top: 150px;
+}
+.section2{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.section2 img{
+    width: 500px;
+}
+.startAccept{
+    justify-content: center;
+    /* padding-top: 50px;   */
+    margin-top: -60px;
+}
+.startAccept h3{
+    font-size: 36px;
+    color: rgb(1,27,51);
+}
+.startAccept p{
+    font-size: 19px;
+    color: rgb(1,27,51);
+}
+@media(max-width: 1280px){
+    .section1 .section2 img{
+    width: 2250px;
+}
+}
+@media(max-width: 1204px){
+    .section1 .section2 img{
+    width: 450px;
+}
+}
+@media(max-width:1190px){
+    .section2{
+        gap: 5px;
+    }
+}
+@media(max-width: 1100px){
+    .section1 .section2 img{
+    width: 350px;
+        }  
+}
+@media(max-width: 991px){
+    .section1 .section2 img{
+    width: 250px;
+        }  
+}
+@media(max-width: 774px){
+    .section2{
+    flex-wrap: wrap;
+        }  
+    .section2{
+        gap: 60px;
+    }
+        .section1 .section2 img{
+        width: 600px;
+    }  
+    .startAccept h3{
+        font-size: 20px;
+    }
+}
+@media(max-width: 767px){
+    #start{
+    flex-wrap: wrap;
+        }  
+        .first1{
+            display: none;
+        }
+    
+        .second1{
+        display: block;
+    }
+}
+@media(max-width: 580px){
+    .section1 .section2 img{
+        width: 20px;
+            }  
+}
+
+/* section3---------------------- */
+#TheTeam{
+    background-color: rgb(249,251,252);
+}
+.textTeam{
+    text-align: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+#TheTeam h2{
+    font-size: 36px;
+    font-family: "Boing", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #011b33;;
+}
+#TheTeam p{
+    font-size: 19px;
+    color: #011b33;
+    font-family: "Graphik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.FirstLine{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.FirstLine img{
+    border-radius: 50%;
+    /* width: 10px; */
+}
+.FirstLine p{
+    text-align: center;
+    font-size: 18px;
+    color: #011b33;
+    font-weight: 600;
+    font-family: "Graphik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.business{
+    margin-top: -20px;
+    font-size: 15px;
+    color: #011b33;
+    font-family: "Graphik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+    padding: 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* z-index: 900; */
+}
+.grid-item{
+    margin-top: 100px;
+}
+.grid-item img{
+    border-radius: 50%;
+    width: 150px;
+    text-align: center;
+    transform: translate(90px);
+}
+
+.grid-item p{
+    text-align: center;
+    font-size: 18px;
+    color: #011b33;
+}
+@media(max-width: 1204px){
+    #gridTable .grid-item img{
+        width: 60px;
+    }
+    .grid-container{
+        flex-wrap: wrap;
+    }
+    
+}
+@media(max-width: 991px){
+    #gridTable .grid-item img{
+        width: 50px;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 774px){
+    #gridTable .grid-item img{
+        width: 50px;
+        flex-wrap: wrap;
+    }
+    #gridTable img{
+        flex-wrap: wrap;
+    }
+}
+
+/* section4------------------- */
+.AccordionPart{
+    display: flex;
+    gap: 20px;
+}
+.AccordionImage img{
+    width: 400px;
+}
+.accordion{
+    margin-top: 30px;
+    width: 50%;
+}
+.accordion{
+    width: 50%;
+    justify-content: space-between;
+}
+.accordion-item {
+    padding: 20px 0;
+}
+@media(max-width: 1204px){
+    .AccordionImage img{
+        width: 350px;
+    }
+}
+@media(max-width: 991px){
+    .AccordionImage img{
+        width: 300px;
+    }
+}
+@media(max-width: 774px){
+    .AccordionImage img{
+        width: 250px;
+    }
+    .AccordionPart{
+        flex-wrap: wrap;
+    }
+}
+
+
+/* section5-------------------------- */
+.parent{
+    display: flex;
+    gap: 30px;
+}
+.firstPicture{
+    display: flex;
+    gap: 20px;
+    
+}
+.firstPicture img{
+    width: 450px;
+    height: 250px;
+    border: thick solid white;
+    border-radius: 5%;
+}
+.firstImage{
+    display: block;
+}
+
+.parent2{
+    display: flex;
+    /* align-items: center; */
+}
+.parent .MapPart{
+    margin-top: 50px;
+}
+.parent .OfficeMap{
+    height: 400px;
+}
+.firstPicture2{
+    display: flex;
+    gap: 20px;
+    margin-top: 310px;
+    border: thick solid white;
+    border-radius: 5%;
+}
+.firstPicture2 img{
+    width: 450px;
+    height: 250px;
+    margin-top: -300px;
+    border: thick solid rgba(255, 255, 255, 0.815);
+    border-radius: 5%;
+}
+.firstPicture2 .image22{
+    margin-top: -285px;
+}
+.firstPicture3{
+    display: flex;
+    gap: 20px;
+    border: thick solid white;
+    border-radius: 5%;
+    /* margin-top: 230px; */
+}
+.firstPicture3 img{
+    width: 450px;
+    height: 250px;
+    border: thick solid rgba(255, 255, 255, 0.815);
+    border-radius: 5%;
+}
+.firstPicture3 .image33{
+    margin-top: -15px;
+}
+.parent a{
+    text-decoration: none;
+}
+@media(max-width: 1280px){
+    .parent{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 1204px){
+    .parent .MapPart{
+        height: 300px;
+    }
+}
+@media(max-width: 1100px){
+    .parent{
+        flex-wrap: wrap;
+    }
+    .firstImage img{
+        width: 350px;
+    }
+}
+ /* error */
+@media(max-width: 765px){
+    .parent .firstImage .firstPicture img{
+        flex-wrap: wrap;
+    }
+    .firstImage img{
+        width: 150px;
+        margin-top: 170px;
+    }
+}
+
+/* section6-------------------------- */
+
+
+/* section7------------------------ */
+#fullPicture{
+    background-image: cover;
+}
+@media(max-width: 1280px){
+    #fullPicture img{
+        width: 1200px;
+    }
+}
+@media(max-width: 1204px){
+    #fullPicture img{
+        width: 800px;
+    }
+}
+@media(max-width: 1190px){
+    #fullPicture img{
+        width: 600px;
+    }
+}
+@media(max-width: 1100px){
+    #fullPicture img{
+        width: 500px;
+    }
+}
+@media(max-width: 991px){
+    #fullPicture img{
+        width: 700px;
+    }
+}
+@media(max-width: 774px){
+    #fullPicture img{
+        width: 350px;
+    }
+}
+/* section8------------------------- */
+
+/* section9------------------------ */
+.container-fluid ul li h5{
+    font-size: 16px;
+    color: #011b33;
+    font-weight: 500;
+    font-family: "Graphik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#BlackLine{
+    background-image: url(../images/circular-pattern--backgroundimage.png);
+    background-repeat: no-repeat;
+    background-color: rgb(249,251,252);
+    background-blend-mode: screen;
+    background-position: 700px 700px;
+}
+.container-fluid .October{
+    margin-top: 80px;
+}
+
+/* flutterPart--------------------------- */
+#TryPay{
+    background-image: url(../images/curved-pattern.png);
+    background-color: rgb(238,255,241);
+    background-size: cover;
+    height: 300px;
+    margin-top: 40px;
+    background-position: 0px 50px;
+    background-repeat: repeat-x;
+    background-size: inherit;
+    background-blend-mode: screen;
+    
+}
+ #parah2 p{
+    margin-top: -100px;
+}
+#start{
+    display: flex;
+    justify-content: space-between;
+}
+#start .first1{
+    font-family: "Boing", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1;
+    /* font-weight: 300; */
+    font-size: 2.7rem;
+    color: rgb(1,27,51);
+}
+.second1{
+    display: none;
+}
+.botton{
+    background-color: rgb(59,183,94);
+    color: white;
+    width: 11em;
+    height: 6vh;
+   justify-content: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+@media(max-width: 767px){
+    #start{
+    flex-wrap: wrap;
+        }  
+        .first1{
+            display: none;
+        }
+    
+        .second1{
+        display: block;
+    }
+}
+@media(max-width: 700px){
+    #TryPay{
+        width: 100%;
+    }
+}
+/* flutter00000000-------------------- */
+#subflutter{
+    margin-top: 100px;
+    text-decoration: none;
+}
+.ToFlex{
+    display: flex;
+    gap: 150px;
+    color: #011B33;
+}
+.ToFlex ul li a{
+    text-decoration: none;
+    color: #011B33;
+    text-align: start;
+}
+.ToFlex ul li{
+    list-style-type: none;
+}
+@media(max-width: 1000px){
+    .container .ToFlex{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 774px){
+    .container .ToFlex{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 590px){
+    .container .ToFlex{
+        flex-wrap: wrap;
+    }
+}
+
+
+/* flutter1---------------------- */
+.contact ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+#Alldiv{
+    display: flex;
+    justify-content: space-between;
+}
+#Bodydiv{
+    margin-top: -100px;
+    color: #011b33;
+    font-family: "Graphik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+}
+@media(max-width: 1000px){
+    #Bodydiv #Alldiv{
+        flex-wrap: wrap;
+    }
+    
+}
+@media(max-width: 774px){
+    #Bodydiv #Alldiv{
+        flex-wrap: wrap;
+    }
+    
+}
+@media(max-width: 584px){
+    #Bodydiv #Alldiv{
+        flex-wrap: wrap;
+    }
+}
